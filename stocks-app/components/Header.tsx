@@ -1,3 +1,6 @@
+
+
+
 import Link from "next/link"
 import NavItem from "./NavItem"
 import UserDropdown from "./UserDropdown"
@@ -13,7 +16,7 @@ const header = () => {
             <nav className="hidden sm:block">
               <NavItem />
             </nav>
-            <UserDropdown />
+             <UserDropdown />
         </div>
     </header>
   )
