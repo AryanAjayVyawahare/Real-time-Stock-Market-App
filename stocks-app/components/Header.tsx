@@ -1,4 +1,6 @@
 import Link from "next/link"
+import NavItem from "./NavItem"
+import UserDropdown from "./UserDropdown"
 
 
 const header = () => {
@@ -6,9 +8,12 @@ const header = () => {
     <header className="sticky top-0 header">
         <div className="container header-wrapper">
             <Link href="/">
-            <image src  ="/assets/icons/logo.svg"alt="Signalist logo"width={140} height={32}className="h-8 w-auto cursor-pointer"/>
-            
+            <img src  ="/assets/icons/logo.svg"alt="Signalist logo"width={140} height={32}className="h-8 w-auto cursor-pointer"/>
             </Link>
+            <nav className="hidden sm:block">
+              <NavItem />
+            </nav>
+            <UserDropdown />
         </div>
     </header>
   )
