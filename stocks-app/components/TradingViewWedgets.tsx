@@ -4,15 +4,7 @@ import React, { useEffect, useRef, memo } from "react";
 const TradingViewWidget = () => {
   const container = useRef(null);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
-    script.type = "text/javascript";
-    script.async = true;
-    script.innerHTML = ``;
-    container.current.appendChild(script);
-  }, []);
+
 
   return (
     <div
