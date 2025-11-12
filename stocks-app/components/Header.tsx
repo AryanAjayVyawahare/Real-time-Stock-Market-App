@@ -1,30 +1,27 @@
-
-
-
-import Link from "next/link"
-import NavItem from "./NavItem"
-import UserDropdown from "./UserDropdown"
-
-
-
-
+import Link from "next/link";
+import NavItem from "./NavItem";
+import UserDropdown from "./UserDropdown";
 
 const header = () => {
   return (
     <header className="sticky top-0 header">
-        <div className="container header-wrapper">
-
-          
-            <Link href="/">
-            <img src  ="/assets/icons/logo.svg"alt="Signalist logo"width={140} height={32}className="h-8 w-auto cursor-pointer"/>
-            </Link>
-            <nav className="hidden sm:block">
-              <NavItem />
-            </nav>
-             <UserDropdown />
-        </div>
+      <div className="container header-wrapper">
+        <Link href="/">
+          <img
+            src="/assets/icons/logo.svg"
+            alt="Signalist logo"
+            width={140}
+            height={32}
+            className="h-8 w-auto cursor-pointer"
+          />
+        </Link>
+        <nav className="hidden sm:block">
+          <NavItem />
+        </nav>
+        <UserDropdown />
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default header
+export default header;

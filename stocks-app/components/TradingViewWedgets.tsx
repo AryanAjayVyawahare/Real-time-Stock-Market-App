@@ -4,8 +4,6 @@ import React, { useEffect, useRef, memo } from "react";
 const TradingViewWidget = () => {
   const container = useRef(null);
 
-
-
   return (
     <div
       className="tradingview-widget-container"
