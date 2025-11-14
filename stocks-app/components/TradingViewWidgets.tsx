@@ -1,5 +1,6 @@
-`use client`;
-import React, { useEffect, useRef, memo } from "react";
+"use client";
+import React, { memo, useRef } from "react";
+
 
 const TradingViewWidget = () => {
   const container = useRef(null);
