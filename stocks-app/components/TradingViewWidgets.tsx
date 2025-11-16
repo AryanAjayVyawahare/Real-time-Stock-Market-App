@@ -1,14 +1,24 @@
 "use client";
 import React, { memo, useRef } from "react";
+import useTradingViewWidget from "./hooks/UseTreadingViewWedgets";
 
 
-const TradingViewWidget = () => {
-  const container = useRef(null);
+interface TradingViewWidgetProps {
+  title: string;
+  scriptUrl: string;
+  confi: Record<string, unknown>;
+  hight?: number;
+  className?: string;
+} 
+
+
+const TradingViewWidget = ({title,scriptUrl,confi,hight = 600,className}: TradingViewWidgetProps) => {
+  const containerRef = useTradingViewWidget(scriptUrl, confi, hight );
 
   return (
     <div
       className="tradingview-widget-container"
-      ref={container}
+      ref={containerRef}
       style={{ height: "100%", width: "100%" }}
     >
       <div
