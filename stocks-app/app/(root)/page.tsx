@@ -14,6 +14,7 @@ const Home = () => {
   scriptUrl="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
   config={MARKET_OVERVIEW_WIDGET_CONFIG}
   className="custom-chart"
+  hight={600}
 />
 
     </div>
