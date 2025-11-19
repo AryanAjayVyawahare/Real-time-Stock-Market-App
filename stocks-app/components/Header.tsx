@@ -7,6 +7,8 @@ const header = () => {
     <header className="sticky top-0 header">
       <div className="container header-wrapper">
         <Link href="/">
+
+        
           <img
             src="/assets/icons/logo.svg"
             alt="Signalist logo"
