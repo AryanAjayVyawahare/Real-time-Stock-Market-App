@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/components/ui/button";
 import { log } from "console";
 import { useForm } from "react-hook-form"
 
@@ -33,7 +34,11 @@ const SignUp = () => {
     <>
     <h1 className="form-title">Sign-Up & Personalize</h1>
 
-        <form onSubmit={handleSubmit(onSubmit)}  className="space-y-5"></form>
+        <form onSubmit={handleSubmit(onSubmit)}  className="space-y-5">
+        <Button type="submit">
+           
+        </Button>
+        </form>
 
     </>
   )
